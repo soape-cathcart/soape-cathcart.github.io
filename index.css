@@ -1,14 +1,37 @@
+@font-face {
+  font-family: 'Snell';
+  src: url('Snell-Roundhand-Script.ttf');
+}
+
+
 body {
   width: 1000px;
   margin: 0 auto;
 }
 
+#page-header {
+  font-size: 35px;
+}
+
+#page-title {
+  font-family: "Dancing Script";
+  font-size: 50px;
+}
+
 .navbar {
   font-family: "Noto Serif";
+  font-size: 18px;
+}
+.navbar a {
+  color: #444;
+}
+.navbar a:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 #carousel img {
-  margin: auto;
+  width: 1000px;
 }
 
 
@@ -33,4 +56,10 @@ body {
 #signature {
   font-family: "Kristi";
   font-size: 40px;
+}
+
+
+#footer {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }

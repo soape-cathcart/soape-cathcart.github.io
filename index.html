@@ -21,7 +21,7 @@
   <script src="https://use.fontawesome.com/2f9632c084.js"></script>
 
   <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
 
   <!--   CSS   -->
   <link rel="stylesheet" type="text/css" href="index.css" />
@@ -32,7 +32,9 @@
   <!-- PAGE HEADER -->
   <section id="page-header">
     <div id="page-title" class="row text-center">
-      <div class="col-xs-12"><a href="index.html">Silken Strands *title image/logo*</a></div>
+      <div class="col-xs-12">
+        <h1>Silken Strands</h1>
+      </div>
     </div>
 
     <!-- NAV BAR -->
@@ -45,15 +47,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Silken Strands</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#">Look Book</a></li>
-              <li><a href="#">Find Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="look-book.html">Look Book</a></li>
+              <li><a href="#footer">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -64,25 +64,61 @@
 
   <!-- CAROUSEL -->
   <section id="carousel">
+    <div class="row">
+      <div class="my-slider col-xs-12 text-center">
+        <ul id="slide-facts">
+          <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
+          <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
+          <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
+          <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <!-- LIGHTBOX -->
+  <section id="lightbox-gallery">
+    <div class="row">
+      <div class="col-xs-3">
+        <a href="#">
+          <img src="img/image.png" alt="Image" height="100px" width="150px" />
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a href="#">
+          <img src="img/image.png" alt="Image" height="100px" width="150px" />
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a href="#">
+          <img src="img/image.png" alt="Image" height="100px" width="150px" />
+        </a>
+      </div>
+      <div class="col-xs-3">
+        <a href="#">
+          <img src="img/image.png" alt="Image" height="100px" width="150px" />
+        </a>
+      </div>
+    </div>
   </section>
 
 
-<hr>
-
 <!-- Footer -->
 <section id="footer">
+
+  <hr />
+
   <div class="row">
     <div class="col-xs-12 col-md-4">
       <h3>Follow Us!</h3>
       <p>
-        <i class="fa fa-3x fa-google-plus-official" aria-hidden="true"></i>
+        <i class="fa fa-3x fa-google-plus-square" aria-hidden="true"></i>
         <i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i>
         <i class="fa fa-3x fa-pinterest-square" aria-hidden="true"></i>
       </p>
     </div>
     <div class="col-xs-12 col-md-4">
-      <h3>*Contact*</h3>
+      <h3>Contact</h3>
       <p>Phone: (123) 456 - 7890</p>
       <p>Dallas / Fort Worth, Texas</p>
     </div>
@@ -92,13 +128,35 @@
       </p>
     </div>
   </div>
+
+  <hr />
+
 </section>
+
 
 
 
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Unslider -->
+  <script src="/unslider-master/src/js/unslider.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+
+      // Slider
+      $('.my-slider').unslider({
+        arrows: false,
+        autoplay: true,
+        delay: 3000,
+        infinite: true
+      });
+    });
+  </script>
 </body>
