@@ -14,14 +14,14 @@
   <!--  Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <!-- Unslider -->
-  <link rel="stylesheet" href="/unslider-master/src/scss/unslider.css">
-
   <!--  Font Awesome -->
   <script src="https://use.fontawesome.com/2f9632c084.js"></script>
 
   <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
+
+  <!-- Unslider -->
+  <link rel="stylesheet" href="unslider-master/src/scss/unslider.css" />
 
   <!--   CSS   -->
   <link rel="stylesheet" type="text/css" href="index.css" />
@@ -59,22 +59,40 @@
         </div>
       </nav>
     </div>
+
+    <!-- Banner -->
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <div id="banner-box">
+          <a href="look-book.html"><img src="img/banner.jpg" alt="Image" /></a>
+        </div>
+      </div>
+    </div>
   </section>
+
 
 
   <!-- CAROUSEL -->
   <section id="carousel">
     <div class="row">
+      <div class="col-xs-12 text-center">
+
+
       <div class="my-slider col-xs-12 text-center">
         <ul id="slide-facts">
-          <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
+          <li><img src="img/flower.jpg" alt="Image" width="1000px" /></li>
           <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
           <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
           <li><img src="img/flower.jpg" alt="Image" height="600px" /></li>
         </ul>
       </div>
+
+
+      </div>
     </div>
   </section>
+
+
 
   <!-- LIGHTBOX -->
   <section id="lightbox-gallery">
@@ -146,17 +164,22 @@
   <!-- Unslider -->
   <script src="/unslider-master/src/js/unslider.js"></script>
 
-
   <script>
     $(document).ready(function() {
 
-      // Slider
+      // Unslider
       $('.my-slider').unslider({
         arrows: false,
         autoplay: true,
-        delay: 3000,
+        delay: 4200,
         infinite: true
       });
+
+      $("#lightSlider").lightSlider();
+
+
+
+
     });
   </script>
 </body>

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Snell';
-  src: url('Snell-Roundhand-Script.ttf');
+    font-family: "Snell";
+    src: url("files/SnellRoundhand.woff") format('woff');
 }
 
 
@@ -10,25 +10,42 @@ body {
 }
 
 #page-header {
-  font-size: 35px;
+  /*font-size: 35px;*/
 }
 
 #page-title {
-  font-family: "Dancing Script";
-  font-size: 50px;
+  font-family: "Snell";
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .navbar {
   font-family: "Noto Serif";
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar a {
   color: #444;
 }
 .navbar a:hover {
-  color: blue;
+  color: #599ff9;
   text-decoration: none;
 }
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+
+#banner-box {
+  border-top: 1px solid #bbb;
+  width: 100%;
+}
+
 
 #carousel img {
   width: 1000px;

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Snell";
+    src: url("files/SnellRoundhand.woff") format('woff');
+}
+
+#look-book {
+  /*background-color: #444;*/
+}
+
+#look-book-title {
+  font-family: "Snell";
+}
+
+.look-gallery img {
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  /*box-shadow: 5px 5px 5px #888888;*/
+  cursor: pointer;
+  margin: 10px, 15px;
+}
+
+.look-gallery img:hover {
+  opacity: .7;
+
+}
+
+#look-book-gallery-2 img {
+  margin: 15px 15px;
+}
