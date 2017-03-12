@@ -3,27 +3,62 @@
     src: url("files/SnellRoundhand.woff") format('woff');
 }
 
-#look-book {
-  /*background-color: #444;*/
-}
 
 #look-book-title {
   font-family: "Snell";
 }
 
-.look-gallery img {
+.img-thumb {
   border: 1px solid #bbb;
   border-radius: 10px;
-  /*box-shadow: 5px 5px 5px #888888;*/
+  box-shadow: 5px 5px 5px #888888;
   cursor: pointer;
-  margin: 10px, 15px;
+  /*height: 350px;*/
+  width: 230px;
 }
 
-.look-gallery img:hover {
+#gallery-2 .img-thumb {
+  margin-top: 25px;
+}
+
+.img-thumb:hover {
+  background-blend-mode: multiply;
+  background-color: #eee;
   opacity: .7;
-
 }
 
-#look-book-gallery-2 img {
-  margin: 15px 15px;
+.thumb-title {
+  font-family: "Noto Serif";
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/*   M O D A L  */
+.modal-dialog {
+  width: 60%;
+  /*height: 92%;*/
+  padding: 0;
+}
+
+.modal {
+  font-family: "Noto Sans";
+}
+.modal-title {
+  /*font-family: "Noto Sans";*/
+}
+
+.modal-text {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 100px;
+  padding-right: 20px;
+}
+
+.modal-text-cont {
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+  padding-right: 20px;
 }
