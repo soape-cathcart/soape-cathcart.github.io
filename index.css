@@ -5,6 +5,7 @@
 
 
 body {
+  /*background-color: #f7f8f9;*/
   width: 1000px;
   margin: 0 auto;
 }
@@ -15,7 +16,7 @@ body {
 
 #page-title {
   font-family: "Snell";
-  font-size: 45px;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -30,25 +31,33 @@ body {
   color: #599ff9;
   text-decoration: none;
 }
+.navbar .active {
+  background-color: #eee;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
 }
-
 .navbar .navbar-collapse {
   text-align: center;
 }
 
 
+
 #banner-box {
+  background-color: white;
   border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
   width: 100%;
 }
 
-
+.my-slider {
+  border-radius: 10px;
+}
 #carousel img {
-  width: 1000px;
+  border-radius: 10px;
+  height: 650px;
 }
 
 
@@ -77,6 +86,14 @@ body {
 
 
 #footer {
+  font-family: "Noto Serif";
+  letter-spacing: 1px;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+#footer a {
+  color: #444;
+}
+.social-media i:hover {
+  opacity: .7;
 }
