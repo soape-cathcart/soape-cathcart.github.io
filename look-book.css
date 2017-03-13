@@ -45,7 +45,8 @@
   font-family: "Noto Sans";
 }
 .modal-title {
-  /*font-family: "Noto Sans";*/
+  font-family: "Snell";
+  font-size: 3em;
 }
 
 .modal-text {

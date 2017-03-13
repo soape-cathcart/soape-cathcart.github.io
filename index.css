@@ -16,7 +16,7 @@ body {
 
 #page-title {
   font-family: "Snell";
-  font-size: 48px;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -53,11 +53,15 @@ body {
 }
 
 .my-slider {
+  background-color: #111;
+  border: 1px solid #111;
   border-radius: 10px;
 }
+
+
 #carousel img {
   border-radius: 10px;
-  height: 650px;
+  height: 550px;
 }
 
 
