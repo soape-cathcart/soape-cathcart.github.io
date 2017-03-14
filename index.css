@@ -57,7 +57,7 @@ body {
 }
 
 .my-slider {
-  background-color: #111;
+  /*background-color: #111;*/
   border: 1px solid #111;
   border-radius: 10px;
 }
