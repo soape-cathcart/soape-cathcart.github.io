@@ -121,7 +121,7 @@ body {
 #footer {
   font-family: "Noto Serif";
   letter-spacing: 1px;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 #footer a {
@@ -129,4 +129,8 @@ body {
 }
 .social-media i:hover {
   opacity: .7;
+}
+
+.contact-info {
+  margin-top: 10px;
 }
