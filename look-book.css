@@ -45,6 +45,10 @@
   text-align: center;
 }
 
+#box-7 img{
+  scale: 1.2x;
+}
+
 
 /*   M O D A L  */
 .modal-dialog {
