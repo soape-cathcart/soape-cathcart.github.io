@@ -61,13 +61,14 @@ body {
 }
 
 .my-slider {
-  background-color: #333;
-  border: 1px solid #111;
+  /*background-color: #333;*/
+  border: 2px solid #111;
   border-radius: 10px;
 }
 
 
 #carousel img {
+  /*border: 2px solid #333;*/
   border-radius: 10px;
   height: 550px;
 }
