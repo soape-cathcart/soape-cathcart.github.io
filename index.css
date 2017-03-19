@@ -66,11 +66,15 @@ body {
   border-radius: 10px;
 }
 
-
+#slide-facts {
+  background-color: #eee;
+  height: 600px;
+}
 #carousel img {
-  /*border: 2px solid #333;*/
+  border: 1px solid #ccc;
   border-radius: 10px;
   height: 550px;
+  margin-top: 25px;
 }
 
 
