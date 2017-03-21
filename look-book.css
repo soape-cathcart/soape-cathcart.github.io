@@ -27,7 +27,9 @@
   cursor: pointer;
   width: 230px;
 }
-
+#gallery-2 {
+  margin: 0 auto;
+}
 #gallery-2 .img-thumb {
   margin-top: 25px;
 }
@@ -45,9 +47,10 @@
   text-align: center;
 }
 
-#box-7 img{
-  scale: 1.2x;
+#block-5 {
+  margin-left: 130px;
 }
+
 
 
 /*   M O D A L  */
