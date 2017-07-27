@@ -126,6 +126,15 @@ body {
   margin-bottom: 20px;
 }
 
+#returnPar {
+  text-indent:  25px
+}
+
+.returns {
+  font-family: "Noto Serif";
+  font-size: 14px;
+}
+
 
 #footer {
   font-family: "Noto Serif";
