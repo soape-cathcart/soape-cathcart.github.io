@@ -62,7 +62,7 @@ body {
 
 .my-slider {
   /*background-color: #333;*/
-  border: 1px solid #111;
+  /*border: 1px solid #111;*/
   border-radius: 10px;
 }
 
@@ -124,15 +124,6 @@ body {
   font-family: "Kristi";
   font-size: 40px;
   margin-bottom: 20px;
-}
-
-#returnPar {
-  text-indent:  25px
-}
-
-.returns {
-  font-family: "Noto Serif";
-  font-size: 14px;
 }
 
 
