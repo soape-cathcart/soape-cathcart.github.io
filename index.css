@@ -93,12 +93,12 @@ body {
 }
 
 #about-head {
-  border-top: #1e875c solid 3px;
+  border-top: darkgoldenrod solid 3px;
   font-family: "Snell";
   font-size: 3em;
 }
 #about-head h1 {
-  background-color: #1e875c;
+  background-color: darkgoldenrod;
   border-radius: 3px;
   color: #fff;
   /*font-weight: bold;*/
