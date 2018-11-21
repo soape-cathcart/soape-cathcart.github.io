@@ -27,7 +27,7 @@
   <!--  Font Awesome -->
   <script src="https://use.fontawesome.com/2f9632c084.js"></script>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Share:700i|Great+Vibes|Kristi|Noto+Sans|Noto+Serif" rel="stylesheet">
   <!-- Unslider -->
   <link rel="stylesheet" href="unslider-master/src/scss/unslider.css" />
   <!-- Ninja Slider -->
@@ -51,9 +51,21 @@
     <div class="row text-center">
       <div class="col-xs-12">
         <div id="banner-box">
-          <a href="/store.html"><img src="img/banner.jpg" width="800px" alt="Image" /></a>
+          <a href="/store.html"><img class="banner" src="img/banner.jpg" width="800px" alt="Image" /></a>
         </div>
       </div>
+    </div>
+
+    <!-- Discount Advertisement  -->
+    <div class="discount-box row">
+      <a class="discount-close-btn pull-right" onclick="javascript:void(0); $(this).parents('.discount-box').slideUp();">&times;</a>
+      <div class="col-xs-12">
+        <img class="discount-star" src="/img/discount-star2.png" />
+      </div>
+        <div class="col-xs-10 col-xs-offset-2 text-center">
+          <h3>Shop Small Business Saturday <br />November 24
+          </br/><span style="color:red;"> 20% off on all items!</span></h3>
+        </div>
     </div>
 
 
@@ -127,7 +139,6 @@
       <div class="social-media col-xs-12 col-md-4">
         <h4>Follow Us!</h4>
         <p>
-          <a href="https://plus.google.com/116305413154179178499"><i class="fa fa-3x fa-google-plus-square" aria-hidden="true"></i></a>
           <a href="https://www.facebook.com/Silken-Strands-147631855761559/"><i class="fa fa-3x fa-facebook-official" aria-hidden="true"></i></a>
           <a href="https://www.pinterest.com/silkenstrandstx/"><i class="fa fa-3x fa-pinterest-square" aria-hidden="true"></i></a>
         </p>
