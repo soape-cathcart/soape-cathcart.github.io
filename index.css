@@ -36,6 +36,18 @@
   margin-top: -175px;
 }
 
+/*  Store Discount */
+
+html#ecwid_html body#ecwid_body .ecwid span::after {
+  content: '-20%';
+  color: #e84034;
+  display: block;
+  font-size: .75em;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-left: 35px;
+}
+
 body {
   width: 1000px;
   margin: 0 auto;
