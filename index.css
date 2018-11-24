@@ -38,7 +38,7 @@
 
 /*  Store Discount */
 
-html#ecwid_html body#ecwid_body .ecwid span::after {
+.ecwid-productBrowser-price .ecwid-productBrowser-price-value::after {
   content: '-20%';
   color: #e84034;
   display: block;
