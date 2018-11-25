@@ -2,7 +2,7 @@
     font-family: "Snell";
     src: url("files/SnellRoundhand.woff") format('woff');
 }
-
+/*
 .discount-box {
   background-color: rgba(0,0,175,.1);
   border-radius: 4px;
@@ -34,11 +34,11 @@
   font-size: 2em;
   line-height: 1.7em;
   margin-top: -175px;
-}
+} */
 
 /*  Store Discount */
 
-.ecwid-productBrowser-price .ecwid-productBrowser-price-value::after {
+/* .ecwid-productBrowser-price .ecwid-productBrowser-price-value::after {
   content: '-20%';
   color: #e84034;
   display: block;
@@ -46,7 +46,7 @@
   font-style: italic;
   letter-spacing: 1px;
   margin-left: 35px;
-}
+} */
 
 body {
   width: 1000px;
