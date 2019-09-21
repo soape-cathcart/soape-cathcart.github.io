@@ -136,12 +136,12 @@ body {
 }
 
 #about-head {
-  border-top: #956c09 solid 3px;
+  border-top: #04338f solid 3px;
   font-family: "Snell";
   font-size: 3em;
 }
 #about-head h1 {
-  background-color: #956c09;
+  background-color: #04338f;
   border-radius: 3px;
   color: #fff;
   letter-spacing: 1px;
