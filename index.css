@@ -353,6 +353,7 @@ body {
 
 #store-title {
   border-top: #bbb solid 1px;
+  padding-top: 35px;
 }
 
 @media (max-width: 1100px) {
@@ -414,3 +415,6 @@ body {
     display: block;
   }
 }
+
+
+
