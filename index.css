@@ -49,9 +49,11 @@
 } */
 
 body {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
+
 .snell {
   font-family: "Snell";
   font-size: 2em;
@@ -61,35 +63,65 @@ body {
   font-size: 1.5em;
 }
 
-#page-header p {
-  font-size: 1.5em;
+#page-header h1 {
+  font-size: 75px;
+}
+@media (max-width: 500px) {
+  #page-header h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 375px) {
+  #page-header h1 {
+    font-size: 50px;
+  }
 }
 .banner {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width: 800px) {
+  .banner {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
 }
 
 #page-title {
   font-family: "Snell";
-  font-size: 3em;
+  font-size: 50px;
   font-weight: bold;
+  margin-top: 75px;
 }
 
 .navbar {
-  font-family: "Noto Serif";
+  background-color: #222;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 .navbar a {
-  color: #444;
+  color: white;
+  transition: all .15s ease-in;
 }
+
 .navbar a:hover {
-  color: #599ff9;
+  color: black;
   text-decoration: none;
 }
-.navbar .active {
-  background-color: #eee;
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #d8e5fe;
 }
+.navbar .active,
+.navbar .active:hover {
+  background-color: #d8e5fe;
+}
+.navbar .active a {
+  color: black;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -99,79 +131,239 @@ body {
   text-align: center;
 }
 
+.navbar-toggle {
+  background-color: #bbb;
+  border: 1px solid black;
+}
+.navbar-toggle .icon-bar {
+  background-color: black;
+  height: 1px;
+}
+
 
 
 #banner-box {
   background-color: white;
-  border-top: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
   width: 100%;
 }
 
-.my-slider {
-  border-radius: 10px;
+#home-display {
+  position: relative;
+}
+.display-text {
+  position: absolute;
+  right: 60px;
+  top: 50px;
+}
+.display-text h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 0 0 10px black;
+}
+@media (max-width: 900px) {
+  .display-text h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .display-text {
+    right: 20px;
+    top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .display-text h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .display-text h2 {
+    font-size: 20px;
+  }
+  .display-text {
+    right: 5px;
+    top: 0;
+  }
+}
+@media (max-width: 420px) {
+  .display-text h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .display-text h2 {
+    font-size: 16px;
+  }
 }
 
-#slide-facts {
-  background-color: #eee;
-  height: 600px;
+.display2 {
+  padding-left: 15px;
 }
-#carousel img {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  height: 550px;
-  margin-top: 25px;
+.display3 {
+  padding-left: 30px;
+}
+.display4{
+  padding-left: 45px;
+}
+@media (max-width: 340px) {
+  .display2,
+  .display3,
+  .display4,
+  .home-cta {
+    padding: 0;
+  }
 }
 
-
-
+.home-cta {
+  margin-top: 50px;
+  opacity: 0;
+  padding-left: 60px;
+  transition: all 1s ease-in-out;
+  transform: translateX(-200px);
+}
+.home-cta a {
+  background-color: #0657f3;
+  color: white;
+  font-size: 25px;
+  padding: 10px 20px;
+  transition: all .15s ease-in;
+}
+.home-cta a:hover {
+  background-color: #043490;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .home-cta a {
+    font-size: 20px;
+  }
+}
 
 
 /* ABOUT.HTML */
 
 
 #about-main {
-  font-family: "Century Gothic";
+  
+  color: white;
+  font-family: "Lato", sans-serif;
   line-height: 35px;
 }
 
-#about-head {
-  border-top: #04338f solid 3px;
-  font-family: "Snell";
-  font-size: 3em;
-}
-#about-head h1 {
-  background-color: #04338f;
-  border-radius: 3px;
-  color: #fff;
+#about-title h1,
+#store-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
   letter-spacing: 1px;
   padding: 10px;
-  width: 40%;
   margin: auto;
-  margin-top: -1px;
+}
+#about-title h1 {
+  color: white;
+  margin-bottom: 35px;
 }
 
 #about-body {
-  width: 80%;
-  margin: auto;
-  font-size: 18px;
+  background-image: url('./img/about-bg.jpg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,.8);
+  letter-spacing: 1px;
+  line-height: 35px;
+  font-size: 20px;
   margin-top: 40px;
-
+  padding: 30px 0;
+}
+@media (max-width: 1000px) {
+  #about-body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 900px) {
+  #about-body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  #about-body {
+    line-height: 30px;
+  }
+}
+@media (max-width: 700px) {
+  #about-body {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+#about-body p {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #about-body p {
+    width: 90%;
+  }
+}
+.about-pg {
+  text-indent: 50px;
 }
 
 #narrative-block {
-  background-color: #eee;
-  border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin: 30px 0;
+}
+
+#narrative-block h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  /* font-style: italic; */
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #narrative-block h2 {
+    font-size: 25px;
+  }
 }
 
 #signature {
-  font-family: "Kristi";
+  font-family: "Dancing Script", sans-serif;
   font-size: 40px;
+  letter-spacing: 1px;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
+@media (max-width: 500px) {
+  #signature {
+    font-size: 30px;
+  }
+}
+
+
+
+
+/* STORE */
+
+
+
+#store-title {
+  border-top: #bbb solid 1px;
+}
+
+@media (max-width: 1100px) {
+  .store-container {
+    max-width: 800px;
+    margin: 0 auto !important;
+  }  
+}
+
+
+/*   FOOTER    */
 
 
 #footer {
@@ -180,8 +372,26 @@ body {
   margin-top: 5%;
   margin-bottom: 10%;
 }
-#footer a {
+.social-media {
+  text-align: center;
+}
+.contact-info {
+  text-align: left;
+}
+.business-info {
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .contact-info,
+  .business-info {
+    text-align: center;
+  }
+}
+.social-media a {
   color: #444;
+}
+.contact-info a {
+  color: #04338f;
 }
 .social-media i:hover {
   opacity: .7;
@@ -191,90 +401,16 @@ body {
   margin-top: 10px;
 }
 
-
-/* STORE */
-
-
-
-#look-book-title {
-  border-top: #04338f solid 1px;
-  color: #eee;
-  font-family: "Snell";
-  margin-bottom: 30px;
-}
-
-#look-book-title h2 {
-  background-color: #04338f;
-  border-radius: 3px;
-  color: #eee;
-  padding: 10px;
-  width: 47%;
-  margin: auto;
-  margin-top: -1px;
-}
-
-#look-book-title span {
-  font-weight: bold;
-}
-
-.img-thumb {
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #888888;
-  cursor: pointer;
-  width: 230px;
-}
-#gallery-2 {
-  margin: 0 auto;
-}
-#gallery-2 .img-thumb {
-  margin-top: 25px;
-}
-
-.img-thumb:hover {
-  background-blend-mode: multiply;
-  background-color: #eee;
-  opacity: .7;
-}
-
-.thumb-title {
-  font-family: "Noto Serif";
-  letter-spacing: 2px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-#block-5 {
-  margin-left: 130px;
+.contact-info a {
+  color: #04338f;
 }
 
 
-
-/*   M O D A L  */
-.modal-dialog {
-  width: 60%;
-  /*height: 92%;*/
-  padding: 0;
+.email-br {
+  display: none;
 }
-
-.modal {
-  font-family: "Century Gothic";
-}
-.modal-title {
-  font-family: "Snell";
-  font-size: 3em;
-}
-
-.modal-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 75px;
-  padding-right: 20px;
-}
-
-.modal-text-cont {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 30px;
-  padding-right: 20px;
+@media (max-width: 400px ){
+  .email-br {
+    display: block;
+  }
 }
