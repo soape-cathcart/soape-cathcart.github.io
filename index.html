@@ -94,9 +94,9 @@
 
 
   <section id="home-display">
-    <img src="./img/molly-lifestyle-offset.jpeg" alt="Molly Lifestyle" width="100%">
+    <img src="./img/molly-lifestyle-offset-sized.jpg" alt="Molly Lifestyle" width="100%">
     <div class="display-text">
-      <h2>Effortless Style</h2>
+      <h2 class="display1">Effortless Style</h2>
       <h2 class="display2">Natural Fabrics</h2>
       <h2 class="display3">Classic Shapes</h2>
       <h2 class="display4">Modern Details</h2>
@@ -148,6 +148,34 @@
 
   <script>
     $(document).ready(function() {
+
+      setTimeout(function(){
+        $('.display1').css({
+          opacity: 1,
+          transform: 'translateX(0)'
+        });
+      }, 200);
+
+      setTimeout(function(){
+        $('.display2').css({
+          opacity: 1,
+          transform: 'translateX(0)'
+        });
+      }, 400);
+
+      setTimeout(function(){
+        $('.display3').css({
+          opacity: 1,
+          transform: 'translateX(0)'
+        });
+      }, 600);
+
+      setTimeout(function(){
+        $('.display4').css({
+          opacity: 1,
+          transform: 'translateX(0)'
+        });
+      }, 800);
 
       setTimeout(function(){
         $('.home-cta').css({
