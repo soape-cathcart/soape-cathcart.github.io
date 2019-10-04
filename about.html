@@ -55,7 +55,7 @@
                 <li><a href="/">Home</a></li>
                 <li class="active"><a href="about.html">Our Story</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="#footer">Contact Us</a></li>
+                <li><a class="contact-link">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -110,7 +110,7 @@
 
           <div id="narrative-block">
             <h2>Inspiration</h2>
-            <p class="about-pg">The line was imagined, considered and dreamed about for some time now. I feel clothes can make a difference in giving us confidence and making us feel our best. In late 2015, my family and I lost my two older sisters within days of each other. Working on creating the blouse line helped me with my heartache and grief. The idea of developing beautiful blouses for women has transcended me into a much happier place.</p>
+            <p class="about-pg">The line was imagined, considered and dreamed about for some time now. I feel clothes can make a difference in giving us confidence and making us feel our best. In late 2015, my family and I lost my two older sisters within days of each other. Working on creating the blouse line helped me with my heartache and grief. The idea of developing beautiful blouses for women has transcended me into a much happier place.</p><br/>
 
             <p>My hope is to brighten your day or lifestyle while wearing a blouse from <span class="snell-about">Silken Strands!</span></p>
 
@@ -164,4 +164,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+  <script>
+  
+    $(document).ready(function(){
+      $(".contact-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 1000);
+      });
+    });
+  
+  </script>
+
+
 </body>
+
+

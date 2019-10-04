@@ -140,7 +140,9 @@ body {
   height: 1px;
 }
 
-
+.contact-link {
+  cursor: pointer;
+}
 
 #banner-box {
   background-color: white;
@@ -338,12 +340,12 @@ body {
   }
 }
 
-#signature {
+#about-body #signature {
   font-family: "Dancing Script", sans-serif;
   font-size: 40px;
   letter-spacing: 1px;
-  margin-bottom: 20px;
-  padding-top: 20px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 @media (max-width: 500px) {
   #signature {
@@ -375,7 +377,7 @@ body {
 
 
 #footer {
-  font-family: "Noto Serif";
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   margin-top: 5%;
   margin-bottom: 10%;

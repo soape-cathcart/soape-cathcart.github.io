@@ -56,7 +56,7 @@
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="about.html">Our Story</a></li>
                 <li><a href="store.html">Store</a></li>
-                <li><a href="#footer">Contact Us</a></li>
+                <li><a class="contact-link">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -148,6 +148,12 @@
 
   <script>
     $(document).ready(function() {
+
+      $(".contact-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 1000);
+      });
 
       setTimeout(function(){
         $('.display1').css({
