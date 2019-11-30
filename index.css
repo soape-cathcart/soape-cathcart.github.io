@@ -2,11 +2,11 @@
     font-family: "Snell";
     src: url("files/SnellRoundhand.woff") format('woff');
 }
-/*
+/* 
 .discount-box {
-  background-color: rgba(0,0,175,.1);
-  border-radius: 4px;
-  font-family: "Share", sans-serif;
+  background: linear-gradient(-45deg, rgba(2,0,36,0) 0%, rgba(6,87,243,0.7) 20%, rgba(6,87,243,0.7) 50%, rgba(6,87,243,0.7) 80%, rgba(0,212,255,0) 100%);
+  color: white;
+  font-family: "Montserrat", sans-serif;
   height: 150px;
   margin: 15px 0;
   padding: 20px;
@@ -47,6 +47,30 @@
   letter-spacing: 1px;
   margin-left: 35px;
 } */
+
+
+.discount2019 {
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  z-index: 1000;
+}
+@media (max-width: 1120px) {
+  .discount2019 {
+    left: 0;
+  }
+  .discount2019 img {
+    width: 150px;
+  }
+}
+@media (max-width: 430px) {
+  .discount2019 {
+    top: -20px;
+  }
+  .discount2019 img {
+    width: 120px;
+  }
+}
 
 body {
   max-width: 1000px;
@@ -260,8 +284,8 @@ body {
 
 
 #about-main {
-  
-  color: white;
+  position: relative;
+  color: #dadada;
   font-family: "Lato", sans-serif;
   line-height: 35px;
 }
@@ -375,6 +399,10 @@ body {
 #store-title {
   border-top: #bbb solid 1px;
   padding-top: 35px;
+}
+
+.store-container {
+  position: relative;
 }
 
 @media (max-width: 1100px) {
