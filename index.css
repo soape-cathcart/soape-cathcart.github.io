@@ -91,7 +91,7 @@
 }
 @media (max-width: 890px) {
   .discount-left {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.7);
     top: 175px;
   }
 }
