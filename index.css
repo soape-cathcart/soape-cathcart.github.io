@@ -73,6 +73,49 @@
 } */
 
 
+.discount-left {
+  border: 3px solid #333;
+  position: absolute;
+  left: 10%;
+  top: 150px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17pt;
+  padding: 20px;
+  z-index: 555;
+}
+@media (max-width: 1100px) {
+  .discount-left {
+    left: 30px;
+  }
+}
+@media (max-width: 890px) {
+  .discount-left {
+    background-color: rgba(255,255,255,.5);
+    top: 175px;
+  }
+}
+@media (max-width: 680px) {
+  .discount-left {
+    top: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .discount-left {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px;
+    font-size: 14pt;
+  }
+}
+@media (max-width: 400px) {
+  .discount-left {
+    top: 400px;
+    font-size: 12pt;
+    width: 200px;
+  }
+}
+
 .coronu .modal-dialog{
   margin-top: 200px;
   padding: 10px;
