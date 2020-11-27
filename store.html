@@ -96,6 +96,12 @@
 
   </section>
 
+  <div class="discount-bottom">
+    <span class="close">X</span>
+    <p class="desktop">Holiday Special - 30% Off Everything!</p>
+    <p class="mobile">30% Off Everything!</p>
+  </div>
+
   <!-- ..................................................................... -->
   <!-- ..................................................................... -->
   <!-- ..................................................................... -->
@@ -177,6 +183,11 @@
   <script>
   
   $(document).ready(function(){
+
+    $('.discount-bottom .close').click(function(){
+        $('.discount-bottom').css('display', 'none');
+      });
+
     $(".contact-link").click(function() {
       $('html, body').animate({
           scrollTop: $("#footer").offset().top

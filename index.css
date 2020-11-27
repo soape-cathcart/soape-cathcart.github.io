@@ -72,6 +72,44 @@
   }
 } */
 
+.discount-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  z-index: 500;
+}
+.discount-bottom p {
+  color: white;
+  font-size: 14pt;
+  padding-top: 10px;
+  text-align: center;
+}
+.discount-bottom .close {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  transition: all .25s;
+}
+.discount-bottom .close:hover {
+  transform: scale(1.1);
+}
+.discount-bottom .mobile {
+  display: none;
+}
+@media (max-width: 550px) {
+  .discount-bottom .mobile {
+    display: block;
+  }
+  .discount-bottom .desktop {
+    display: none;
+  }
+}
 
 .discount-left {
   border: 3px solid #333;
