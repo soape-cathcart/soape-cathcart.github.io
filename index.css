@@ -379,8 +379,8 @@ body {
   transform: translateX(-200px);
 }
 .home-cta a {
-  background-color: #0657f3;
-  color: white;
+  background-color: #d8e5fe;
+  color: black;
   font-size: 25px;
   padding: 10px 20px;
   transition: all .15s ease-in;
