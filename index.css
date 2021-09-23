@@ -405,8 +405,8 @@ body {
 
 
 #about-main {
-  position: relative;
-  color: #dadada;
+  /* position: relative; */
+  /* color: #dadada; */
   font-family: "Lato", sans-serif;
   line-height: 35px;
 }
@@ -420,7 +420,6 @@ body {
   margin: auto;
 }
 #about-title h1 {
-  color: white;
   margin-bottom: 35px;
 }
 @media (max-width: 600px) {
@@ -430,46 +429,42 @@ body {
   }
 }
 
-#about-body {
-  background-image: url('./img/about-bg.jpg');
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0,0,0,.8);
+
+#about-body img {
+  margin-bottom: 30px;
+}
+
+#about-main p {
   letter-spacing: 1px;
   line-height: 35px;
   font-size: 20px;
-  margin-top: 40px;
-  padding: 30px 0;
+  margin: 0 auto;
+  width: 90%;
 }
 @media (max-width: 1000px) {
-  #about-body {
+  #about-main p {
     font-size: 18px;
   }
 }
 @media (max-width: 900px) {
-  #about-body {
+  #about-main p {
     font-size: 16px;
   }
 }
 @media (max-width: 800px) {
-  #about-body {
+  #about-main p {
     line-height: 30px;
   }
 }
 @media (max-width: 700px) {
-  #about-body {
+  #about-main p {
     font-size: 14px;
     line-height: 25px;
   }
 }
-#about-body p {
-  width: 80%;
-  margin: 0 auto;
-}
+
 @media (max-width: 500px) {
-  #about-body p {
+  #about-main p {
     width: 90%;
   }
 }
@@ -492,11 +487,11 @@ body {
 }
 @media (max-width: 700px) {
   #narrative-block h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
-#about-body #signature {
+#about-main #signature {
   font-family: "Dancing Script", sans-serif;
   font-size: 40px;
   letter-spacing: 1px;
@@ -559,6 +554,10 @@ body {
 }
 .social-media a {
   color: #444;
+}
+.social-media a:last-child {
+  display: inline-block;
+  margin-left: 10px;
 }
 .contact-info a {
   color: #04338f;
