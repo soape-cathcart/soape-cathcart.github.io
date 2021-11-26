@@ -157,13 +157,26 @@
 }
 
 .coronu .modal-dialog{
-  margin-top: 200px;
+  /* margin-top: 200px; */
   padding: 10px;
 }
 @media (max-width: 650px) {
   .coronu .modal-dialog {
     margin-top: 100px;
   }
+}
+
+.coronu .modal-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.coronu .close {
+  font-size: 30px;
+  opacity: 1;
+  position: absolute;
+  right: 25px;
+  top: 20px;
 }
 .coronu img {
   width: 100%;
