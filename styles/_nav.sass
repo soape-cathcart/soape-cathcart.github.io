@@ -1,0 +1,173 @@
+.desktop-nav
+   background-color: white
+   display: flex
+   flex-direction: row
+   flex-wrap: nowrap
+   height: 50px
+   position: fixed
+   transition: all ease-in .25s
+   width: 100%
+   z-index: 999
+
+   &:hover
+      @extend .expand-nav
+      transition: all .25s ease-in
+      
+      .nav-links li a 
+         color: $light
+
+      .cart-links svg
+         fill: $light
+
+   .nav-links 
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      margin: 0
+      padding: 0
+      width: 60%
+
+      li
+         display: block
+         height: 100%
+         list-style-type: none
+         margin: 0
+         padding: 0
+
+         a
+            color: $dark
+            display: block
+            font-family: 'Montserrat', sans-serif
+            font-size: 20px
+            height: 100%
+            padding: 8px 20px
+            text-decoration: none
+            transition: all .25s ease-in
+            width: 100%
+
+            &:hover
+               background-color: $light
+               color: $dark
+               padding-top: 30px
+
+   .cart-links
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      margin: 0
+      width: 40%
+
+      span
+         display: inline-block
+         // opacity: 0
+         // padding-bottom: 8px
+
+      
+      svg
+         display: inline
+         width: 30px
+         fill: #ccc
+         transition: all .25s ease-in
+         vertical-align: sub
+
+      li
+         display: block
+         font-family: 'Montserrat', sans-serif
+         font-size: 25px
+         height: 100%
+         list-style-type: none
+         margin: 0 10px 0 10px
+
+         a
+            color: #aaa
+            display: block
+            height: 100%
+            padding: 8px
+            text-decoration: none
+            transition: all .25s ease-in
+            width: 100%
+      
+
+   // Small Nav - Desktop
+
+   &.expand-nav
+      background-color: $dark
+      height: 75px
+
+      .nav-links
+         li
+            a
+               padding: 20px
+
+      .cart-links
+         svg
+            width: 45px
+
+
+// ***     MOBILE NAV      ***
+
+.mobile-nav
+   background-color: #aaa
+   display: none
+   height: 100vh
+   width: 300px
+   right: 0
+   position: fixed
+   top: 0
+
+   .nav-toggle
+      cursor: pointer
+      position: absolute
+      right: 15px
+      top: 15px
+
+      .svg-burger
+         transition: all .25s ease-in
+         
+         .hidden
+            display: none
+
+      .svg-close
+         display: none
+         position: absolute
+         // opacity: 0
+         top: 0
+         transition: all .25s ease-in
+
+         .show
+            display: block
+            opacity: 1
+
+   .nav-links
+      padding: 50px 20px
+
+      li
+         display: block
+         height: 20vh
+         list-style-type: none
+         min-height: 60px
+
+         a
+            color: #fafafa
+            font-family: 'Montserrat', sans-serif
+            font-size: 30px
+            font-weight: 300
+            text-decoration: none
+
+   .cart-links
+      li
+         list-style-type: none
+         a
+            svg
+               width: 60px
+               fill: #dedede
+
+.mobile-nav.open-menu 
+   .nav-links
+
+      
+
+   .nav-lnks
+      display: flex
+      flex-direction: column
+      flex-wrap: nowrap

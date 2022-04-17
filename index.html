@@ -12,217 +12,232 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="files/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="files/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="files/favicon-16x16.png">
-  <link rel="manifest" href="files/site.webmanifest">
-  <link rel="mask-icon" href="files/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#9f00a7">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/images/favicon/site.webmanifest">
+   <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#2b5797">
+   <meta name="theme-color" content="#ffffff">
+  
   <!-- Pinterest -->
   <meta name="p:domain_verify" content="86d7a9d5825344a984a9d0a19fb2853d"/>
 
-  <!--  Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   <!--  Font Awesome -->
   <script src="https://use.fontawesome.com/2f9632c084.js"></script>
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Share:700i|Noto+Sans|Noto+Serif|Montserrat|Lato|Raleway" rel="stylesheet">
-  <!-- Unslider -->
-  <link rel="stylesheet" href="unslider-master/src/scss/unslider.css" />
-  <!-- Ninja Slider -->
-  <link href="ninja-slider.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Tangerine:wght@700&family=Cormorant&family=Carattere&family=Handlee&family=Lato&family=Bellefair&display=swap" rel="stylesheet">
+
+
   <!--   CSS   -->
-  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css" />
+  <!-- Slider -->
+  <link  rel="stylesheet" type="text/css"  href="./styles/slick.css"/>
+   <!-- Main Styles -->
+  <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/main.css.map" />
 
 </head>
 
 <body>
+ 
+   <header>
+      <nav class="desktop-nav">
+         <ul class="nav-links">
+            <li><a href="./">HOME</a></li>
+            <!-- <li><a href="./about">Our Story</a></li> -->
+            <li><a href="./store.html">STORE</a></li>
+         </ul>
+         <ul class="cart-links">
+            <li><a href="./store.html#!/~/cart">
+               <!-- <span>Shopping Bag</span> -->
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg>
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <nav class="mobile-nav open-menu">
+         <div class="nav-toggle">
+            <svg class="svg-burger" viewBox="0 0 60 60" width="60" height="60">
+               <rect width="60" height="7" fill="#ccc"></rect>
+               <rect y="20" width="60" height="7" fill="#ccc"></rect>
+               <rect y="40" width="60" height="7" fill="#ccc"></rect>
+             </svg>
+             <br/>
+             <svg class="svg-close" viewBox="0 0 60 60" width="60" height="60">
+               <line x1="0" y1="60" x2="60" y2="0" stroke-width="7" stroke="#ccc" />
+               <line x1="0" y1="0" x2="60" y2="60" stroke-width="7" stroke="#ccc" />
+             </svg>
+         </div>
+         <ul class="nav-links">
+            <li><a href="./">HOME</a></li>
+            <!-- <li><a href="./about">Our Story</a></li> -->
+            <li><a href="./about">STORE</a></li>
+         </ul>
+         <ul class="cart-links">
+            <li>
+               <a href="./store.html#!/~/cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M112 112C112 50.14 162.1 0 224 0C285.9 0 336 50.14 336 112V160H400C426.5 160 448 181.5 448 208V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V208C0 181.5 21.49 160 48 160H112V112zM160 160H288V112C288 76.65 259.3 48 224 48C188.7 48 160 76.65 160 112V160zM136 256C149.3 256 160 245.3 160 232C160 218.7 149.3 208 136 208C122.7 208 112 218.7 112 232C112 245.3 122.7 256 136 256zM312 208C298.7 208 288 218.7 288 232C288 245.3 298.7 256 312 256C325.3 256 336 245.3 336 232C336 218.7 325.3 208 312 208z"/></svg></a>
+               <!-- <span><a href="./store.html#!/~/cart">Cart</a></span> -->
 
-  <!-- PAGE HEADER -->
-  <section id="page-header">
+               <!--  Add "Shopping Bag" expanding text to .cart-links    -->
+            </li>
+         </ul>
+      </nav>
+      <div class="page-title">
 
-      <nav class="navbar navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
+      </div>
+   </header>
+
+   <main class="home">
+      <section class="slider-section hero-section" data-bg="./images/watercolor/watercolor.jpg" data-effect="slide-right">
+         <div class="left">
+            <div class="slider">
+               <div class="slide">
+                  <img src="./images/slides/flowers.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="./images/slides/plants.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="./images/slides/orange.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="./images/slides/cottage.jpg" alt="">
+               </div>
+               <!-- <div class="slide">
+                  <img src="./images/slides/dusk.jpg" alt="">
+               </div> -->
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a class="contact-link">Contact Us</a></li>
-              </ul>
+         </div>
+         <div class="right">
+            <div class="hero-elements">
+               <h1 class="home-title">Silken Strands</h1>
+               <p class="tagline">CLASSIC SHAPES <span class="star">&starf;</span> MODERN DETAILS</p>
+               <p class="tagline2">Find your style with Silken Strands clothing</p>
+               <p class="cta"><a href="./store.html" class="button button-clear">START SHOPPING
+                  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z"/></svg> -->
+               </a></p>
+
+               <div class="social">
+                  <a class="facebook" href="https://www.facebook.com/silkenstrandsclothing/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                  <a class="instagram" href="https://www.instagram.com/silken_strands/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+               </div>
             </div>
-          </div>
-        </nav>
+            
 
-    <div id="page-title" class="row text-center">
-      <div class="col-xs-12">
-        <h1>Silken Strands</h1>
-      </div>
-    </div>
+         </div>
+      </section>
 
-    <!-- Banner -->
-    <!-- <div class="row text-center">
-      <div class="col-xs-12">
-        <div id="banner-box">
-          <a href="/store.html"><img class="banner" src="img/banner.jpg" alt="Fall 2019 Collection" /></a>
-        </div>
-      </div>
-    </div> -->
+      <section class="preview-section">
+         <h2 id="display">Spring 2022</h2>
+         <div class="preview-list slider">
+            <!--  Appending catalog preview items here:
+               <li class="preview"></li> -->
+         </div>
+      </section>
 
-    <!-- Discount Advertisement  -->
-    <!-- <div class="discount-box row">
-      <a class="discount-close-btn pull-right" onclick="javascript:void(0); $(this).parents('.discount-box').slideUp();">&times;</a>
-      <div class="col-xs-12">
-        <img class="discount-star" src="/img/discount-2019.svg" width="200px" />
-      </div>
-        <div class="col-xs-10 col-xs-offset-2 text-center">
-          <h3>Shop Small Business Saturday <br />November 30-31
-          </br/><span style="color:lightyellow;"> 30% off on all items - all weekend!</span></h3>
-        </div>
-    </div> -->
+      <section class="clothing-section">
+         <h2 class="clothing-title-mobile">Our Catalog</h2>
+         <div class="container">
+<div class="right">
+            <div class="slider">
+               <a href="#"><img src="/images/png/1-Maggie.png"></a>
+               <a href="#"><img src="/images/png/2-Misha.png"></a>
+               <a href="#"><img src="/images/png/3-Tara.png"></a>
+            </div>
+         </div>
+            <div class="left">
+            <h2 class="clothing-title">Our Catalog</h2>
+            <div class="clothing-copy-box">
+               <div class="clothing-copy">
+                  <!-- <h3 class="clothing-subheader"><strong>CLASSIC SHAPES &lowast; MODERN DETAILS</strong></h3> -->
+                  <p>The Spring 2022 designs are inspired by all those good feelings that come with wearing something pretty or whimsical. It's all about feeling your best. The use of natural fabrics in every piece lets us bring a connection to nature wherever we find ourselves. We are also proud to announce the introduction of dresses and matching skirts to open up even more style options.</p>
+                  <p class="tagline">We hope you find your style with <em>Silken Strands</em> clothing.</p>
+                  <a href="./store.html" class="button button-clear">SHOP</a>
+               </div>
+            </div>
+         </div>
 
-    <!-- Discount Box -->
-    <!-- <div class="discount-left">
-      <p>shop new items<br/>for <strong>Spring 2021</strong></p>
-    </div> -->
-    
-    <!-- Modal  -->
-    <!-- <div class="coronu modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+         
 
-            <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <img src="/img/black-friday-2021.jpg" alt="Black Friday Discount - 30% Off All Inventory"/>
-          </div>
-        </div>
-      </div>
-    </div> -->
+         </div>
+      </section>
 
-  </section>
+      <section class="about-section">
+         <h2 class="mobile-title">Our Story</h2>
+         <div class="container">
+            <div class="left">
+               <div class="shaune">
+                  <img src="./images/shaune-square.jpg" alt="Shaune Cathcart | Founder, Silken Strands Clothing">
+               </div>
+            </div>
+            <div class="right">
+               <h2 class="title">Our Story</h2>
+               <div class="about-copy-box">
+                  <div class="about-copy">
+                     <p>I've always felt that fashion has a tremendous impact on how we feel. Wearing an outfit that is flattering, feminine, and fun helps me feel my best. I've found the same feeling through helping others to look and feel their best, too.</p>
+                     <p class="tagline">My hope is to brighten your day with a piece from Silken Strands!</p>
+                     <p class="signature">Shaune Cathcart, Owner</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </section>
 
-  <!-- <div class="discount-bottom">
-    <span class="close">X</span>
-    <p class="desktop">Holiday Special - 30% Off Everything!<br/>See Discount at Checkout</p>
-    <p class="mobile">30% Off Everything!<br/>See Discount at Checkout!</p>
-  </div> -->
+      <!-- Instagram Feed Here -->
 
-  <section id="home-display">
-
-      <!-- <div class="discount2019 text-center">
-        <img src="./img/discount2019.png" alt="30% off everything">
-      </div> -->
-
-    <img src="./img/cover.jpg" alt="Silken Strands Spring 2021" width="100%">
-    <div class="display-text">
-      <h2 class="display1">Effortless Style</h2>
-      <h2 class="display2">Natural Fabrics</h2>
-      <h2 class="display3">Classic Shapes</h2>
-      <h2 class="display4">Modern Details</h2>
-      <div class="home-cta"><a href="/store.html">SHOP NOW</a></div>
-    </div>
-  </section>
+   </main>
 
 
   <!-- Footer -->
-  <section id="footer">
 
-    <div class="row">
-      <div class="social-media col-xs-12 col-md-4">
-        <h4>Follow Us!</h4>
-        <p>
-          <a href="https://www.facebook.com/silkenstrandsclothing/" target="_blank"><i class="fa fa-3x fa-facebook" aria-hidden="true" title="Silken Strands Facebook"></i></a>
-          <a href="https://www.instagram.com/silken_strands" style="transform:translateX(10px);" target="_blank" title="Silken Strands Instagram"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
-        </p>
+  <footer>
+     <div class="top">
+        <div class="left">
+         <h2 class="title">Silken Strands</h2>
+         <div class="contact">
+            <h5>Shaune Cathcart, Owner</h5>
+            <p><a href="mailto:shaune.cathcart@silkenstrandsclothing.com"><img src="./images/icon-mail.png" alt="Mail Icon" width="22px" /> shaune.cathcart<br class="mobile-br" />@silkenstrandsclothing.com</a></p>
+         </div>
       </div>
-      <div class="contact-info col-xs-12 col-md-5">
-        <p><i class="fa fa-user" aria-hidden="true"></i> Shaune Cathcart, Owner</p>
-        <p><a href="mailto:shaune.cathcart@silkenstrandsclothing.com"><i class="fa fa-envelope" aria-hidden="true"></i> shaune.cathcart<br class="email-br"/>@silkenstrandsclothing.com</a></p>
+
+      <div class="middle">
+         <ul class="nav-links">
+            <li><a href="./">HOME</a></li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./store.html#!/~/cart">CART</a></li>
+         </ul>
       </div>
-      <div class="business-info col-xs-12 col-md-3">
-        <p>
-          Silken Strands <i class="fa fa-copyright" aria-hidden="true"></i> 2016
-        </p>
-        <p>Dallas / Fort Worth, Texas</p>
-      </div>
-    </div>
 
-  </section>
-
-
+      <div class="right">
+         <div class="social">
+            <a href="https://www.facebook.com/silkenstrandsclothing/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+            <a href="https://www.instagram.com/silken_strands/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+         </div>
+         <p>Based in the Dallas &starf; Fort Worth Metroplex</p>
+         <p><em>Silken Strands</em> is proud to sew all clothing in the USA</p>
+         </div>
+     </div>
+     
+      <p class="copyright">&copy; Silken Strands Clothing 2022</p>
+  </footer>
 
 
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Slider -->
+  <script src="./scripts/slick.js"></script>
 
-  <!-- Unslider -->
-  <script src="/unslider-master/src/js/unslider.js"></script>
+  <!-- Waypoint -->
+  <script src="./scripts/waypoints.js"></script>
 
-  <!-- Ninja Slider -->
-  <script src="ninja-slider.js" type="text/javascript"></script>
-
-  <script>
-    $(document).ready(function() {
-
-      $('.discount-bottom .close').click(function(){
-        $('.discount-bottom').css('display', 'none');
-      });
-
-      $(".contact-link").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#footer").offset().top
-        }, 1000);
-      });
-
-      setTimeout(function(){
-        $('.display1').css({
-          opacity: 1,
-          transform: 'translateX(0)'
-        });
-      }, 200);
-
-      setTimeout(function(){
-        $('.display2').css({
-          opacity: 1,
-          transform: 'translateX(0)'
-        });
-      }, 400);
-
-      setTimeout(function(){
-        $('.display3').css({
-          opacity: 1,
-          transform: 'translateX(0)'
-        });
-      }, 600);
-
-      setTimeout(function(){
-        $('.display4').css({
-          opacity: 1,
-          transform: 'translateX(0)'
-        });
-      }, 800);
-
-      setTimeout(function(){
-        $('.home-cta').css({
-          opacity: 1,
-          transform: 'translateX(0)'
-        });
-      }, 1000);
- 
-      setTimeout(function(){$('.coronu').modal();}, 500);
-
-    });
-  </script>
+   <script src="./scripts/functions.js"></script>
+   <script src="./scripts/home.js"></script>
 </body>
