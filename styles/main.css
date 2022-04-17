@@ -276,6 +276,7 @@ ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0;
+  padding-right: 30px;
   width: 40%;
 }
 
