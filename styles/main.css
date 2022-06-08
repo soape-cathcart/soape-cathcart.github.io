@@ -229,12 +229,12 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
-  width: 60%;
+  width: 100%;
 }
 
 .desktop-nav .nav-links li {
@@ -251,7 +251,7 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   height: 100%;
-  padding: 8px 20px;
+  padding: 8px 50px;
   text-decoration: none;
   -webkit-transition: all .25s ease-in;
   transition: all .25s ease-in;
@@ -264,66 +264,13 @@ ul {
   padding-top: 30px;
 }
 
-.desktop-nav .cart-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 0;
-  padding-right: 30px;
-  width: 40%;
-}
-
-.desktop-nav .cart-links span {
-  display: inline-block;
-}
-
-.desktop-nav .cart-links svg {
-  display: inline;
-  width: 30px;
-  fill: #ccc;
-  -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in;
-  vertical-align: sub;
-}
-
-.desktop-nav .cart-links li {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
-  height: 100%;
-  list-style-type: none;
-  margin: 0 10px 0 10px;
-}
-
-.desktop-nav .cart-links li a {
-  color: #aaa;
-  display: block;
-  height: 100%;
-  padding: 8px;
-  text-decoration: none;
-  -webkit-transition: all .25s ease-in;
-  transition: all .25s ease-in;
-  width: 100%;
-}
-
 .desktop-nav.expand-nav, .desktop-nav:hover {
   background-color: #444;
   height: 75px;
 }
 
 .desktop-nav.expand-nav .nav-links li a, .desktop-nav:hover .nav-links li a {
-  padding: 20px;
-}
-
-.desktop-nav.expand-nav .cart-links svg, .desktop-nav:hover .cart-links svg {
-  width: 45px;
+  padding: 20px 50px;
 }
 
 .mobile-nav {
